@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aastha Goyal | Portfolio Web Developer</title>
+
+<meta name="description"
+content="Personal portfolio website of Aastha Goyal showcasing skills, projects and contact information.">
+
+<meta name="keywords"
+content="portfolio, web developer, HTML5, CSS, accessibility">
+
+<meta name="author" content="Aastha Goyal">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="index.html">
+</head>
+
+<body>
+
+<a href="#main-content">Skip to Main Content</a>
+
+<header role="banner">
+<h1>Aastha Goyal</h1>
+<p>Web Developer | Student | Designer</p>
+
+<nav role="navigation" aria-label="Main Navigation">
+<ul>
+<li><a href="index.html" aria-current="page">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main-content">
+
+<section aria-labelledby="hero-heading">
+<h2 id="hero-heading">Welcome to My Portfolio</h2>
+<p>
+This website showcases my skills, projects and professional journey.
+</p>
+</section>
+
+<section aria-labelledby="skills-heading">
+<h2 id="skills-heading">Skills</h2>
+
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>Responsive Design</li>
+</ul>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+<p>&copy; 2026 Aastha Goyal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
