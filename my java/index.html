@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<title>Aastha Goyal | Portfolio Website</title>
+<meta name="description" content="Personal portfolio website showcasing projects, skills and contact information.">
+<meta name="keywords" content="portfolio, web developer, projects, HTML, CSS, student portfolio">
+<meta name="author" content="Aastha Goyal">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph SEO -->
+<meta property="og:title" content="Aastha Goyal Portfolio">
+<meta property="og:description" content="Portfolio website with projects and contact information">
+<meta property="og:type" content="website">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Skip Link */
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    top:auto;
+}
+
+.skip-link:focus{
+    left:10px;
+    top:10px;
+    background:black;
+    color:white;
+    padding:10px;
+    z-index:1000;
+}
+
+/* Header */
+header{
+    background:#222;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+/* Navigation */
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover,
+nav a:focus{
+    text-decoration:underline;
+}
+
+/* Main Content */
+main{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+section{
+    background:white;
+    margin:20px 0;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+    color:#222;
+}
+
+/* Projects */
+.project{
+    border:1px solid #ddd;
+    padding:15px;
+    margin-top:15px;
+    border-radius:5px;
+}
+
+/* Form */
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    background:#222;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover,
+button:focus{
+    background:#444;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Skip Navigation -->
+<a href="#main-content" class="skip-link">
+Skip to main content
+</a>
+
+<!-- Header -->
+<header role="banner">
+    <h1>Aastha Goyal</h1>
+    <p>Web Developer | Student | Portfolio</p>
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main -->
+<main id="main-content" role="main">
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <p>
+            Hello! I am Aastha Goyal. I am interested in web development and
+            creating modern, user-friendly and accessible websites.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Web Development</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+
+        <article class="project" aria-label="Project One">
+            <h3>Portfolio Website</h3>
+            <p>
+                A responsive and accessible personal portfolio website
+                developed using HTML and CSS.
+            </p>
+        </article>
+
+        <article class="project" aria-label="Project Two">
+            <h3>Student Management System</h3>
+            <p>
+                Java-based project for managing student records and data.
+            </p>
+        </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Me</h2>
+
+        <!-- Accessible Form -->
+        <form aria-label="Contact Form">
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                aria-required="true">
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true">
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true"></textarea>
+
+            <button type="submit" aria-label="Send Message">
+                Send Message
+            </button>
+
+        </form>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer role="contentinfo">
+    <p>
+        © 2026 Aastha Goyal | All Rights Reserved
+    </p>
+</footer>
+
+</body>
+</html>
